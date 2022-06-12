@@ -47,7 +47,7 @@ const Repos = () => {
       <FlatList
         disableScrollViewPanResponder={true}
         data={dataRepos}
-        style={{paddingTop: 4}}
+        // style={{paddingTop: 4}}
         renderItem={renderItem}
         keyExtractor={item => item.id}
         ListEmptyComponent={ListEmptyComponent}
@@ -71,7 +71,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffffff',
     padding: 16,
     marginHorizontal: 16,
-    marginBottom: 16,
+    marginTop: 4,
+    marginBottom: 12,
     borderRadius: 16,
     shadowColor: '#808080',
     elevation: 6,
